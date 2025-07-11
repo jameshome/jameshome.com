@@ -1,0 +1,80 @@
+---
+const milestones = [
+  {
+    icon: "logo-longnow.svg",
+    date: "02022 – Today",
+    story:
+      'Director of Communications <i>&</i> Design at <a class="hover:underline text-red" href="https://longnow.org">The Long Now Foundation</a>.',
+  },
+  {
+    icon: "logo-rejoice.svg",
+    date: "02017 – 02022",
+    story:
+      'Captain of <a class="hover:underline text-red" href="https://gettingfr.ee">S/V Rejoice</a>. After a year-long DIY refit, sailed our 40 foot sloop-rigged <a class="hover:underline text-red" href="https://hallberg-rassy.com">Hallberg-Rassy</a> out the <a class="hover:underline text-red" href="https://en.wikipedia.org/wiki/Golden_Gate">Golden Gate</a>, down the coast, and explored the <a class="hover:underline text-red" href="https://en.wikipedia.org/wiki/Gulf_of_California">Gulf of California</a> and <a class="hover:underline text-red" href="https://en.wikipedia.org/wiki/Pacific_Coast_of_Mexico">Pacific Mexico</a>. Learned that I don’t need much to be happy, that less comfort makes me feel more alive, and that the occasional real fear of death extinguishes most other anxieties.',
+  },
+  {
+    icon: "logo-google.svg",
+    date: "02010 – 02017",
+    story:
+      'Senior product designer at <a class="hover:underline text-red" href="https://google.com">Google</a>. Led major design efforts on operating systems and search. Learned how to organize large teams of phenomenally talented collaborators to create indispensable everyday tools for 1B people worldwide and how good intentions often go awry at scale',
+  },
+  {
+    icon: "logo-freebase.svg",
+    date: "02006 – 02010",
+    story:
+      'Design director at <a class="hover:underline text-red" href="https://www.youtube.com/watch?v=TJfrNo3Z-DU">Metaweb</a>. Led design for <a class="hover:underline text-red" href="https://en.wikipedia.org/wiki/Freebase_(database)">Freebase</a>, which structured and connected 18M people, places, and things and became the foundation for Google’s <a class="hover:underline text-red" href="https://blog.google/products/search/introducing-knowledge-graph-things-not/">Knowledge Graph</a> less than two years after <a class="hover:underline text-red" href="https://googleblog.blogspot.com/2010/07/deeper-understanding-with-metaweb.html">acquisition</a>. Learned that a couple dozen people with the right shared narrative can redefine a $30B business in a few years.',
+  },
+  {
+    icon: "logo-sfembassy.svg",
+    date: "02009 – 02016",
+    story:
+      'Co-founder and Minister of Propaganda for the <a class="hover:underline text-red" href="https://sfembassy.com/">SF Embassy</a>, a collective of music-loving city explorers founded at <a class="hover:underline text-red" href="https://sxsw.com">SxSW</a> in 02009. When we went to <a class="hover:underline text-red" href="https://en.wikipedia.org/wiki/Reykjav%C3%ADk">Reykjavík</a> in 02013 for <a class="hover:underline text-red" href="https://icelandairwaves.is/">Iceland Airwaves</a>, we were the second largest delegation of Americans to visit that year and were granted an audience with anarchist mayor Jon Gnarr. Learned how to put brand in service of community instead of capitalism.',
+  },
+  {
+    icon: "logo-ted-eg.svg",
+    date: "02000 - 02018",
+    story:
+      'Fixer at <a class="hover:underline text-red" href="https://en.wikipedia.org/wiki/Richard_Saul_Wurman">Richard Saul Wurman</a>’s <a class="hover:underline text-red" href="https://ted.com">TED</a> and <a class="hover:underline text-red" href="https://en.wikipedia.org/wiki/Michael_Hawley">Michael Hawley</a>’s <a class="hover:underline text-red" href="https://egconf.com">EG</a> Conferences. Prevented staffing, communication, logistical, and security issues from compromising TED moments. Learned that the show must go on, the importance of the after party, that nothing builds community faster than vulnerability, and how quickly the right conversation can change your life.',
+  },
+  {
+    icon: "logo-minds.svg",
+    date: "01996 – 01997",
+    story:
+      'Production manager at Electric Minds. Helped design and build <a class="hover:underline text-red" href="https://en.wikipedia.org/wiki/Howard_Rheingold">Howard Rheingold</a>’s pioneering social media startup. Learned design discipline, intellectual anarchy, and the profound joy of being in the right place at the right time with the right people.',
+  },
+  {
+    date: "01997 – 2006",
+    story:
+      'Founding designer at several startups. Design consultant at several others. Clients included <a class="hover:underline text-red" href="https://appliedminds.com/">Applied Minds</a>, <a class="hover:underline text-red" href="https://www.disney.com/">Disney</a>, and <a class="hover:underline text-red" href="https://www.mitsubishi-logistics-america.com/">Mitsubishi Logistics</a>. Learned the strange equations of orchestration and chance that separate the projects you’ve heard of from the ones you haven’t.',
+  },
+  {
+    icon: "logo-sega.svg",
+    date: "01995 – 01996",
+    story:
+      'Interface designer at <a class="hover:underline text-red" href="https://sega.com">Sega</a>. Designed and engineered Sega’s first website. Learned that we’re all making it up as we go along and that nothing is any less a wonder for that.',
+  },
+  {
+    icon: "logo-dahlia.svg",
+    date: "01999 – Forever",
+    story:
+      'Husband to <a class="hover:underline text-red" href="https://beloved.org">Kristie Dahlia Home</a>, priestess of the mystery. <a class="hover:underline text-red" href="https://thisishomemade.com">Our love</a> is the work I’m proudest of.',
+  },
+];
+---
+
+<div class="grid grid-cols-[auto_1fr] gap-6 text-white my-8 max-w-3xl items-start mx-auto">
+  {
+    milestones.map((milestone) => (
+      <div>
+      {milestone.icon && <img src={`/src/assets/${milestone.icon}`} />}
+      </div>
+      <div>
+        <p class="font-sans text-stone-500">{milestone.date}</p>
+        <p
+          class="font-serif text-stone-700 text-2xl"
+          set:html={milestone.story}
+        />
+      </div>
+    ))
+  }
+</div>

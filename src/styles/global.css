@@ -1,1 +1,49 @@
 @import "tailwindcss";
+@plugin '@tailwindcss/typography';
+
+@theme {
+  --font-serif: "EB Garamond", serif;
+  --font-sans: "Barlow Semi Condensed", sans-serif;
+  --color-graphite: rgba(42, 57, 61, 1);
+  --color-red: rgba(226, 0, 0, 1);
+}
+
+@font-face {
+  font-display: fallback;
+  font-family: "Barlow Semi Condensed";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../assets/barlow-semi-condensed-v15-latin-600.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-display: fallback;
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/eb-garamond-v31-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: fallback;
+  font-family: "EB Garamond";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/eb-garamond-v31-latin-italic.woff2") format("woff2");
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  overscroll-behavior: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "liga" on;
+}

@@ -1,22 +1,78 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+---
+import "../styles/global.css";
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+const title = "JAMES HOME";
+const url = "https://jameshome.com/";
+const card = "https://jameshome.com/social-jameshome.png";
+const cardWidth = "1200";
+const cardHeight = "628";
+const description =
+  "I’m a designer, technologist, adventurer, and mystic living up on the Olympic Peninsula, in the heart of Cascadia.";
+const facebook = "https://www.facebook.com/jameshome";
+const twitter = "@jameshome";
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  publisher: {
+    "@type": "Organization",
+    name: title,
+    url: "https://jameshome.com/",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://jameshome.com/content/images/size/w256h256/2024/05/favicon.png",
+      width: 60,
+      height: 60,
+    },
+  },
+  url: "https://jameshome.com/",
+  mainEntityOfPage: "https://jameshome.com/",
+  description:
+    "I’m a designer, technologist, adventurer, and mystic living up on Washington’s Olympic Peninsula, in the heart of Cascadia.",
+};
+---
+
+<!--
+                    .x88888x.
+                   :8**888888X.  :>
+                   f    `888888x./
+                  '       `*88888~
+                   \.    .  `?)X.
+                    `~=-^   X88>
+                           X8888
+                           488888      .
+                   .xx.     88888X   .@8c
+                  '*8888.   '88888> '2025"
+                    88888    '8888>   ^*
+                    `8888>    `888
+                     "8888     8%
+                      `"888x--><!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <title>{title}</title>
+
+    <meta name="description" content={description} />
+    <meta property="og:site_name" content={title} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={url} />
+    <meta property="og:image" content={card} />
+    <meta property="og:image:width" content={cardWidth} />
+    <meta property="og:image:height" content={cardHeight} />
+    <meta property="article:publisher" content={facebook} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:url" content={url} />
+    <meta name="twitter:image" content={card} />
+    <meta name="twitter:site" content={twitter} />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
