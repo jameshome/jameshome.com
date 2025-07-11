@@ -3,13 +3,14 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <div
-    class={`relative m-6 md:m-12 ml-auto  aspect-3/4 bg-[url(/properbusiness.svg)]  bg-contain bg-no-repeat`}>
+  <div class="p-2">
     <div
-      class={`absolute bg-[url(/logo-jameshome.svg)] bg-cover aspect-2/1 w-1/3 md:w-1/4 top-0 right-0`}>
+      class={`relative m-4 md:m-10 ml-auto  aspect-3/4 bg-[url(/properbusiness.svg)]  bg-contain bg-no-repeat`}>
+      <div
+        class={`absolute bg-[url(/logo-jameshome.svg)] bg-cover aspect-2/1 w-1/3 md:w-1/4 top-0 right-0`}>
+      </div>
     </div>
   </div>
-
   <slot />
 
   <img src="/logo-jameshome.svg" class="max-w-40 my-40 mx-auto" />
