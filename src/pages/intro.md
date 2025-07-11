@@ -10,7 +10,7 @@ This is the best photograph we have of human civilization irrevocably crossing t
 
 Some call the time since this photograph was taken the [Long Peace](https://en.wikipedia.org/wiki/Long_Peace). Some call it [Pax Atomica](https://en.wikipedia.org/wiki/Pax_Atomica). 
 
-I suspect that the twenty-first century analog will be the emergence of superhuman machine intelligence, and that we’ll irrevocably cross that consequential threshold sometime in the next twenty years.
+I suspect that the twenty-first century analog will be the emergence of superhuman machine intelligence, and that we’ll irrevocably cross that consequential threshold sometime in the next ten years.
 
 From them on we’ll then share our capacity for total annihilation with an intelligence that we won’t really understand. 
 
