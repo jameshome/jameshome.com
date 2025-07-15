@@ -62,7 +62,7 @@ const milestones = [
 ];
 ---
 
-<div class="grid grid-cols-[auto_1fr] gap-6 text-white my-8 max-w-3xl items-start px-3 mx-auto">
+<div class="grid grid-cols-[auto_1fr] gap-6 text-white my-8 max-w-3xl items-start px-4 mx-auto">
   {
     milestones.map((milestone) => (
       <div>
@@ -71,7 +71,7 @@ const milestones = [
       <div>
         <p class="font-sans text-stone-500">{milestone.date}</p>
         <p
-          class="font-serif text-stone-700 text-2xl"
+          class="font-serif text-stone-700 text-xl md:text-2xl"
           set:html={milestone.story}
         />
       </div>
