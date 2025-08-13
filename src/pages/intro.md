@@ -18,4 +18,8 @@ We have no idea how that’s going to go.
 
 That probably would have broken the atom’s thrall over geopolitical entropy on its own, but the next twenty years will also see the start of the largest mass migration in human history as climates in heavily populated places around the world become intolerable.
 
-In short, I think it’s going to keep getting weirder and that we’re all going to need each other more than ever. I’m grateful you’re here. 
+I'm open to the idea that together we can find a way to make these inevitable changes ones that strengthen our humanity. <a href="https://longnow.org/ideas/elements-of-a-durable-civilization/">Stewart Brand writes</a> that being obsessed with how civilization might end "takes our eye off the main event, which is how we manage civilization’s continuity. Continuity is made partly of exploration, but most of the work is maintenance." He quotes folk singer Pete Seeger: “You should consider that the essential art of civilization is maintenance.” 
+
+Civilization-scale maintenance is inherently a community endeavor.
+
+I think it’s going to keep getting weirder.  I think we’re all going to need each other more than ever. I’m grateful you’re here. 
