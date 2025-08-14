@@ -3,6 +3,7 @@ import Layout from "../layouts/HomeLayout.astro";
 import Intro from "./intro.md";
 import Bio from "./bio.md";
 import Now from "./now.md";
+import Updated from "./updated.md";
 import Timeline from "../components/Timeline.astro";
 
 import Homestars from "../components/Homestars.astro";
@@ -22,11 +23,15 @@ import Prose from "../components/Prose.astro";
     <Now />
   </Prose>
 
+  <p class="mx-auto p-6 text-stone-700 max-w-3xl text-2xl font-serif">
+    As ever <span style="color: rgba(226, 0, 0, 1);">—</span>
+  </p>
+
   <img class="mx-auto" alt="- J." src="/hero-chop.svg" />
 
-  <p class="mx-auto px-4 max-w-3xl text-stone-500 text-right">
-    Port Townsend, Cascadia, July 02025
-  </p>
+  <div class="mx-auto px-4 max-w-3xl text-stone-500 text-right">
+    <Updated />
+  </div>
 
   <a href="mailto:jh@jameshome.com"
     ><img

@@ -8,6 +8,4 @@ Also <span style="color: rgba(226, 0, 0, 1);">—</span>
 * How to best cut trails into a forested ravine
 * The movement of artists from the cities back to the wilds
 
-If we’ve got this or anything else to talk about, give me a shout!
-
-As ever <span style="color: rgba(226, 0, 0, 1);">—</span>
+If we’ve got this or anything else to talk about, I want to hear from you.
