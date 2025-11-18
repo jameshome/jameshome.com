@@ -16,13 +16,13 @@ const milestones = [
     icon: "logo-google.svg",
     date: "02010 – 02017",
     story:
-      'Senior product designer at <a class="hover:underline text-red" href="https://google.com">Google</a>. Led major design efforts on operating systems and search. Learned how to organize large teams of phenomenally talented collaborators to create indispensable everyday tools for 1B people worldwide and how good intentions often go awry at scale.',
+      'Senior Product Designer at <a class="hover:underline text-red" href="https://google.com">Google</a>. Led major design efforts on operating systems and search. Learned how to organize large teams of phenomenally talented collaborators to create indispensable everyday tools for 1B people worldwide and how good intentions often go awry at scale.',
   },
   {
     icon: "logo-freebase.svg",
     date: "02006 – 02010",
     story:
-      'Design director at <a class="hover:underline text-red" href="https://www.youtube.com/watch?v=TJfrNo3Z-DU">Metaweb</a>. Led design for <a class="hover:underline text-red" href="https://en.wikipedia.org/wiki/Freebase_(database)">Freebase</a>, which structured and connected 18M people, places, and things and became the foundation for Google’s <a class="hover:underline text-red" href="https://blog.google/products/search/introducing-knowledge-graph-things-not/">Knowledge Graph</a> less than two years after <a class="hover:underline text-red" href="https://googleblog.blogspot.com/2010/07/deeper-understanding-with-metaweb.html">acquisition</a>. Learned that a couple dozen people with the right shared narrative can redefine a $30B business in a few years.',
+      'Design Director at <a class="hover:underline text-red" href="https://www.youtube.com/watch?v=TJfrNo3Z-DU">Metaweb</a>. Led design for <a class="hover:underline text-red" href="https://en.wikipedia.org/wiki/Freebase_(database)">Freebase</a>, which structured and connected 18M people, places, and things and became the foundation for Google’s <a class="hover:underline text-red" href="https://blog.google/products/search/introducing-knowledge-graph-things-not/">Knowledge Graph</a> less than two years after <a class="hover:underline text-red" href="https://googleblog.blogspot.com/2010/07/deeper-understanding-with-metaweb.html">acquisition</a>. Learned that a couple dozen people with the right shared narrative can redefine a $30B business in a few years.',
   },
   {
     icon: "logo-sfembassy.svg",
@@ -45,13 +45,13 @@ const milestones = [
     icon: "logo-minds.svg",
     date: "01996 – 01997",
     story:
-      'Production manager at Electric Minds. Helped design and build <a class="hover:underline text-red" href="https://en.wikipedia.org/wiki/Howard_Rheingold">Howard Rheingold</a>’s pioneering social media startup. Learned design discipline, intellectual anarchy, and the profound joy of being in the right place at the right time with the right people.',
+      'Production Manager at Electric Minds. Helped design and build <a class="hover:underline text-red" href="https://en.wikipedia.org/wiki/Howard_Rheingold">Howard Rheingold</a>’s pioneering social media startup. Learned design discipline, intellectual anarchy, and the profound joy of being in the right place at the right time with the right people.',
   },
   {
     icon: "logo-sega.svg",
     date: "01995 – 01996",
     story:
-      'Interface designer at <a class="hover:underline text-red" href="https://sega.com">Sega</a>. Designed and engineered Sega’s first website. Learned that we’re all making it up as we go along and that nothing is any less a wonder for that.',
+      'Interface Designer at <a class="hover:underline text-red" href="https://sega.com">Sega</a>. Designed and engineered Sega’s first website. Learned that we’re all making it up as we go along and that nothing is any less a wonder for that.',
   },
   {
     icon: "logo-dahlia.svg",
@@ -62,19 +62,21 @@ const milestones = [
 ];
 ---
 
-<div class="grid grid-cols-[auto_1fr] gap-6 text-white my-8 max-w-3xl items-start px-4 mx-auto">
+<div
+  class="grid grid-cols-[auto_1fr] gap-6 text-white my-8 max-w-3xl items-start px-4 mx-auto"
+>
   {
     milestones.map((milestone) => (
-      <div>
-      {milestone.icon && <img src={`/${milestone.icon}`} />}
-      </div>
-      <div>
-        <p class="font-sans text-stone-500">{milestone.date}</p>
-        <p
-          class="font-serif text-stone-700 text-xl md:text-2xl"
-          set:html={milestone.story}
-        />
-      </div>
+      <Fragment>
+        <div>{milestone.icon && <img src={`/${milestone.icon}`} />}</div>
+        <div>
+          <p class="font-sans text-stone-500">{milestone.date}</p>
+          <p
+            class="font-serif text-stone-700 text-xl md:text-2xl"
+            set:html={milestone.story}
+          />
+        </div>
+      </Fragment>
     ))
   }
 </div>
