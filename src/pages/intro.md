@@ -22,4 +22,4 @@ I'm open to the idea that together we can find ways to make these inevitable cha
 
 Civilization-scale maintenance is inherently a community endeavor.
 
-I think it’s going to keep getting weirder.  I think we’re all going to need each other more than ever. I’m grateful you’re here. 
+All that's to say I think it’s going to keep getting weirder, I think we’re all going to need each other more than ever, and I’m grateful you’re here. 
