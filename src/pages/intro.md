@@ -14,7 +14,7 @@ I suspect that the twenty-first century analog will be the emergence of superhum
 
 We have no idea how that’s going to go.
 
-That probably would have been sufficient to break the atom’s thrall over geopolitical entropy, but we also know that at the start of the largest mass migration in human history as climates in heavily populated places around the world become intolerable.
+That probably would have been sufficient to break the atom’s thrall over geopolitical entropy, but we also know that we're at the start of the largest mass migration in human history as climates in heavily populated places around the world become intolerable.
 
 I'm open to the idea that we can find ways to make these now inevitable changes strengthen our humanity, but a whole lot of us will have to choose to work together in radically new ways to do so. 
 
