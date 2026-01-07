@@ -18,7 +18,7 @@ We have no idea how that’s going to go.
 
 That probably would have broken the atom’s thrall over geopolitical entropy on its own, but the next twenty years will also see the start of the largest mass migration in human history as climates in heavily populated places around the world become intolerable.
 
-I'm open to the idea that together we can find ways to make these inevitable changes  strengthen our humanity. <a href="https://longnow.org/ideas/elements-of-a-durable-civilization/">Stewart Brand writes</a> that being obsessed with how civilization might end "takes our eye off the main event, which is how we manage civilization’s continuity. Continuity is made partly of exploration, but most of the work is maintenance." Brand quotes folk singer Pete Seeger: “You should consider that the essential art of civilization is maintenance.” 
+I'm open to the idea that we can find ways to make these inevitable changes strengthen our humanity, but a whole lot of us will have to choose to work together in radically new ways to do so. <a href="https://longnow.org/ideas/elements-of-a-durable-civilization/">Stewart Brand writes</a> that being obsessed with how civilization might end "takes our eye off the main event, which is how we manage civilization’s continuity. Continuity is made partly of exploration, but most of the work is maintenance." Brand quotes folk singer Pete Seeger: “You should consider that the essential art of civilization is maintenance.” 
 
 Civilization-scale maintenance is inherently a community endeavor.
 
