@@ -22,4 +22,4 @@ That probably would have been sufficient to break the atom’s thrall over geopo
 
 Civilization-scale maintenance is inherently a community endeavor.
 
-It’s going to keep getting weirder. We’re all going to need each other more than ever. We've got tools and protocols to figure out together. I’m grateful you’re here.
+It’s going to keep getting weirder. We’re all going to need each other more than ever. I’m grateful you’re here.
