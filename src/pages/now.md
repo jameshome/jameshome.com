@@ -2,7 +2,7 @@ I’m especially interested in understanding how civilization holds together in 
 
 Also <span style="color: rgba(226, 0, 0, 1);">—</span>
 * Maintenance collectives, especially local multi-disciplinary radically inclusive ones and global hyper-focused radically exclusive ones
-* Decentralized, protocol-oriented, local-first compute frameworks and operating systems for understanding and organizing nearby geographies, people, resources, and risks that don’t leave an interrogable digital footprint
+* Decentralized, protocol-oriented, local-first compute frameworks and operating systems for understanding and organizing nearby people, resources, and risks in ways that don’t leave an interrogable digital footprint
 * The future of libraries and manuals
 * Cascadia, bioregionalism generally, and other sensible ways to think about how to be on the land together
 * How to best cut trails into a forested ravine
