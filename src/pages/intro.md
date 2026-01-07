@@ -16,10 +16,10 @@ We have no idea how that’s going to go.
 
 That probably would have been sufficient to break the atom’s thrall over geopolitical entropy, but we also know that we're at the start of the largest mass migration in human history as climates in heavily populated places around the world become intolerable.
 
-I'm open to the idea that we can find ways to make these inevitable changes strengthen our humanity, but a whole lot of us will have to choose to work together in radically new ways to do so. 
+**I'm open to the idea that we can find ways to make these inevitable changes strengthen our humanity, but a whole lot of us will have to choose to work together in radically new ways to do so.**
 
-<a href="https://longnow.org/ideas/elements-of-a-durable-civilization/">Stewart Brand writes</a> that being obsessed with how civilization might end "takes our eye off the main event, which is how we manage civilization’s continuity. Continuity is made partly of exploration, but most of the work is maintenance." Brand quotes folk singer Pete Seeger: “You should consider that the essential art of civilization is maintenance.” 
+[Stewart Brand writes](https://longnow.org/ideas/elements-of-a-durable-civilization/) that being obsessed with how civilization might end "takes our eye off the main event, which is how we manage civilization’s continuity. Continuity is made partly of exploration, but most of the work is maintenance." Brand quotes folk singer Pete Seeger: “You should consider that the essential art of civilization is maintenance.” 
 
 Civilization-scale maintenance is inherently a community endeavor.
 
-All that's to say I think it’s going to keep getting weirder, that we’re all going to need each other more than ever, and that we're going to need to create better tools and protocols to thrive together. I’m grateful you’re here. 
+It’s going to keep getting weirder. We’re all going to need each other more than ever. We've got tools and protocols to figure out together. I’m grateful you’re here.
