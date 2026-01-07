@@ -9,4 +9,4 @@ Also <span style="color: rgba(226, 0, 0, 1);">—</span>
 * The movement of artists from the cities back to the wilds
 * Artifacts and experiences that can’t be mistaken for products
 
-If we’ve got this or anything else to talk about, I want to hear from you.
+If you're working on any of these things and think I might be able to help, I want to hear from you.
