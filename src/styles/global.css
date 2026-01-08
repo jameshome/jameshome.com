@@ -22,7 +22,7 @@
   font-family: "EB Garamond";
   font-style: normal;
   font-weight: 400;
-  src: url("../assets/eb-garamond-v31-latin-regular.woff2") format("woff2");
+  src: url("../assets/eb-garamond-v32-latin-regular.woff2") format("woff2");
 }
 
 @font-face {
@@ -30,7 +30,14 @@
   font-family: "EB Garamond";
   font-style: italic;
   font-weight: 400;
-  src: url("../assets/eb-garamond-v31-latin-italic.woff2") format("woff2");
+  src: url("../assets/eb-garamond-v32-latin-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: fallback;
+  font-family: "EB Garamond";
+  font-weight: 600;
+  src: url("../assets/eb-garamond-v32-latin-600.woff2") format("woff2");
 }
 
 html {
