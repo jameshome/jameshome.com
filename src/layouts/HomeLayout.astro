@@ -4,9 +4,17 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout>
   <div class="relative mx-auto my-0 max-w-5xl">
-    <img src="/logo-jameshome.svg" class="absolute top-0 right-0 m-2 w-1/4" />
-    <img src="/properbusiness.svg" class="mx-auto max-h-screen w-3/4 py-4" />
+    <img
+      src="/logo-jameshome.svg"
+      alt="JAMES HOME"
+      class="absolute top-0 right-0 m-2 w-1/4"
+    />
+    <img
+      src="/properbusiness.svg"
+      alt="Value judgments are destructive to our proper business, which is curiosity and awareness. — John Cage"
+      class="mx-auto max-h-screen w-3/4 py-4"
+    />
   </div>
   <slot />
-  <img src="/logo-jameshome.svg" class="mx-auto my-40 max-w-40" />
+  <img src="/logo-jameshome.svg" alt="HOME" class="mx-auto my-40 max-w-40" />
 </Layout>
