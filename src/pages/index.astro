@@ -3,8 +3,6 @@ import Layout from "../layouts/HomeLayout.astro";
 import Intro from "./intro.md";
 import Bio from "./bio.md";
 import Now from "./now.md";
-import Updated from "./updated.md";
-import Headshot from "./headshot.md";
 import Timeline from "../components/Timeline.astro";
 import Homestars from "../components/Homestars.astro";
 import Prose from "../components/Prose.astro";
@@ -21,18 +19,15 @@ import Prose from "../components/Prose.astro";
   </Prose>
   <Prose>
     <Now />
-  </Prose>
-
-  <p
-    class="mx-auto max-w-3xl p-6 font-serif text-xl text-stone-700 md:text-2xl"
-  >
     As ever <span style="color: rgba(226, 0, 0, 1);">—</span>
-  </p>
+  </Prose>
 
   <img class="mx-auto" alt="- J." src="/chop.svg" />
 
-  <div class="mx-auto max-w-3xl px-4 text-right text-stone-500">
-    <Updated />
+  <div
+    class="mx-auto max-w-3xl px-4 text-right font-sans text-sm text-stone-500 uppercase"
+  >
+    Port Townsend, Cascadia, July 02025
   </div>
 
   <a href="mailto:jh@jameshome.com"
@@ -45,7 +40,21 @@ import Prose from "../components/Prose.astro";
   <Homestars />
   <Timeline />
   <Homestars />
-  <Prose>
-    <Headshot />
-  </Prose>
+  <figure class="relative w-full bg-black">
+    <img
+      src="/jameshome-02025.jpg"
+      alt="A black and white portrait of James Home"
+      class="mx-auto w-3/4 md:w-1/2"
+    />
+    <figcaption
+      class="absolute right-5 bottom-5 origin-bottom-right rotate-90 font-sans text-sm text-white/50 uppercase"
+    >
+      Photo by <a href="https://www.christophermichel.com/"
+        >Christopher Michel</a
+      >
+    </figcaption>
+  </figure>
+  <a href="/"
+    ><img src="/logo-jameshome.svg" alt="HOME" class="mx-auto my-20 w-40" /></a
+  >
 </Layout>

@@ -1,0 +1,31 @@
+---
+// src/pages/notes/[...slug].astro
+import { getCollection, render } from "astro:content";
+
+// 1. Generate a new path for every note in the collection
+export async function getStaticPaths() {
+  const notes = await getCollection("notes");
+  return notes.map((note) => ({
+    params: { slug: note.id }, // note.id is usually the relative path from your 'base'
+    props: { note },
+  }));
+}
+
+// 2. Get the note data from props
+const { note } = Astro.props;
+const { Content } = await render(note);
+---
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>{note.data.title || "Note"}</title>
+  </head>
+  <body>
+    <nav><a href="/notes">← Back to Notes</a></nav>
+    <article>
+      <h1>{note.data.title}</h1>
+      <Content />
+    </article>
+  </body>
+</html>

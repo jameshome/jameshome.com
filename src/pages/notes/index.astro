@@ -1,0 +1,15 @@
+---
+import { getCollection } from "astro:content";
+const allNotes = await getCollection("notes");
+---
+
+<h1>My Obsidian Notes</h1>
+<ul>
+  {
+    allNotes.map((note) => (
+      <li>
+        <a href={`/notes/${note.id}`}>{note.data.title || note.id}</a>
+      </li>
+    ))
+  }
+</ul>
