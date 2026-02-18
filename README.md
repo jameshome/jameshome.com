@@ -1,1 +1,4 @@
-# JAMESHOME.COM
+# JAMES HOME
+
+Astro >< Obsidian-based worldview billboard
+
