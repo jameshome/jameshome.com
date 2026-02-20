@@ -2,7 +2,7 @@
 <p style="text-align: center;">I share my birthday with <a href="https://en.wikipedia.org/wiki/Trinity_(nuclear_test)">Trinity</a>.</p>
 
 <figure>
-  <img src="/hero-trinity.jpg" alt="the first detonation">
+  <img src="/intro-trinity.jpg" alt="the first detonation">
   <figcaption>`Trinity` by Jack Aeby, July 16, 01945. “It was there so I shot it.”</figcaption>
 </figure>
 
