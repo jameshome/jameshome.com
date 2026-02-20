@@ -1,0 +1,3 @@
+[submodule "src/content/vagabondage"]
+	path = src/content/vagabondage
+	url = https://github.com/jameshome/vagabondage.git
