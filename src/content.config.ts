@@ -3,7 +3,7 @@ import { ObsidianMdLoader } from "astro-loader-obsidian";
 
 const notes = defineCollection({
   loader: ObsidianMdLoader({
-    base: "/Users/jh/vagabondage/public/",
+    base: "src/content/vagabondage",
     url: "notes",
   }),
 });
