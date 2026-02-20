@@ -1,6 +1,8 @@
+name: Update Submodule
 on:
   repository_dispatch:
-    types: [update_notes]
+    types: [notes_updated]
+
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -9,10 +11,11 @@ jobs:
         with:
           submodules: true
           token: ${{ secrets.GH_PAT }}
-      - run: |
+      - name: Git Pull and Commit
+        run: |
           git submodule update --remote --merge
-          git config --global user.name "James Home"
+          git config --global user.name "Obsidian on behalf of James Home"
           git config --global user.email "jh@jameshome.com"
           git add .
-          git commit -m "sync: notes" || exit 0
+          git commit -m "chore: auto-sync vagabondage" || exit 0
           git push
