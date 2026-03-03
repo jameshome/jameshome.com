@@ -68,6 +68,6 @@ The `Prose` component wraps content in Tailwind typography styles with customize
 
 ## Important Notes
 
-- Vite is pinned to 6.4.1 via `overrides` in package.json — do not change this without testing
+- Vite is pinned to 6.4.1 via `overrides` in package.json to fix a TS2322 type error — do not remove this pin
 - The `.astro/` generated types directory is gitignored; run `npm run dev` to regenerate
 - Format files with Prettier before committing — Tailwind class order is auto-sorted
