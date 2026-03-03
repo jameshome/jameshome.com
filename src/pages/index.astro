@@ -1,9 +1,10 @@
 ---
 import Layout from "../layouts/HomeLayout.astro";
 import Intro from "./intro.md";
-import Bio from "./bio.md";
-import Now from "./now.md";
+import Bio from "../content/vagabondage/bio.md";
+import Now from "../content/vagabondage/now.md";
 import Timeline from "../components/Timeline.astro";
+import Homestar from "../components/Homestar.astro";
 import Homestars from "../components/Homestars.astro";
 import Prose from "../components/Prose.astro";
 ---
@@ -25,18 +26,18 @@ import Prose from "../components/Prose.astro";
   <img class="mx-auto" alt="- J." src="/chop.svg" />
 
   <div
-    class="mx-auto max-w-3xl px-4 text-right font-sans text-sm text-stone-500 uppercase"
+    class="text-md mx-auto max-w-3xl px-4 text-right font-sans text-stone-500 uppercase"
   >
     Port Townsend, Cascadia, July 02025
   </div>
 
-  <a href="mailto:jh@jameshome.com"
-    ><img
-      class="mx-auto my-20 px-3"
-      src="/foragoodtimecall.svg"
-      alt="For a good time, call..."
-    /></a
+  <div
+    class="font-script text-red mx-auto my-40 max-w-3xl -rotate-20 text-center text-6xl"
   >
+    <a href="https://signal.me/#p/4152445464">+1 415 244 5464</a>
+    <Homestar class="mx-auto my-10 rotate-20" />
+    <a href="mailto:jh@jameshome.com">jh@jameshome.com</a>
+  </div>
   <Homestars />
   <Timeline />
   <Homestars />

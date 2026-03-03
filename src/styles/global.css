@@ -1,9 +1,10 @@
 @import "tailwindcss";
-@plugin '@tailwindcss/typography';
+@plugin "@tailwindcss/typography";
 
 @theme {
   --font-serif: "EB Garamond", serif;
   --font-sans: "Barlow Semi Condensed", sans-serif;
+  --font-script: "Mr Dafoe", sans-serif;
   --color-graphite: rgba(42, 57, 61, 1);
   --color-red: rgba(226, 0, 0, 1);
 }
@@ -38,6 +39,14 @@
   font-family: "EB Garamond";
   font-weight: 600;
   src: url("../assets/eb-garamond-v32-latin-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: fallback;
+  font-family: "Mr Dafoe";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/mr-dafoe-v15-latin-regular.woff2") format("woff2");
 }
 
 html {
