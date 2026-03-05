@@ -1,0 +1,3 @@
+[build]
+  command = "git submodule update --init --recursive && npm run build"
+  publish = "dist"
