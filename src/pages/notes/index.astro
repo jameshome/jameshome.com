@@ -1,15 +1,28 @@
 ---
+import Layout from "../../layouts/NoteLayout.astro";
+import IconBack from "../../assets/icons/icon-back.svg";
 import { getCollection } from "astro:content";
 const allNotes = await getCollection("documents");
 ---
 
-<h1>My Obsidian Notes</h1>
-<ul>
-  {
-    allNotes.map((note) => (
-      <li>
-        <a href={`/notes/${note.id}`}>{note.data.title || note.id}</a>
-      </li>
-    ))
-  }
-</ul>
+<Layout>
+  <div class="mx-auto my-6 max-w-3xl px-4 pb-24">
+    <a
+      href="/"
+      class="text-red inline-flex items-center justify-center rounded-full bg-white p-2 hover:scale-110"
+      ><IconBack /></a
+    >
+    <h1 class="font-script text-red mt-2 text-6xl">Notes</h1>
+    <ul class="my-6 px-4 text-2xl">
+      {
+        allNotes.map((note) => (
+          <li>
+            <a href={`/notes/${note.id}`} class="text-red hover:bg-white">
+              {note.data.title || note.id}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</Layout>

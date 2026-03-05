@@ -1,15 +1,33 @@
 ---
-import Layout from "../layouts/HomeLayout.astro";
-import Intro from "./intro.md";
-import Bio from "../content/vagabondage/bio.md";
-import Now from "../content/vagabondage/now.md";
+import Layout from "../layouts/GlobalLayout.astro";
+import { getEntry, render } from "astro:content";
 import Timeline from "../components/Timeline.astro";
 import Homestar from "../components/Homestar.astro";
 import Homestars from "../components/Homestars.astro";
 import Prose from "../components/Prose.astro";
+
+const [introEntry, bioEntry, nowEntry] = await Promise.all([
+  getEntry("documents", "intro"),
+  getEntry("documents", "bio"),
+  getEntry("documents", "now"),
+]);
+const [{ Content: Intro }, { Content: Bio }, { Content: Now }] =
+  await Promise.all([render(introEntry!), render(bioEntry!), render(nowEntry!)]);
 ---
 
 <Layout>
+  <div class="relative mx-auto my-0 max-w-5xl">
+    <img
+      src="/logo-jameshome.svg"
+      alt="JAMES HOME"
+      class="absolute top-0 right-0 m-4 w-1/4"
+    />
+    <img
+      src="/properbusiness.svg"
+      alt="Value judgments are destructive to our proper business, which is curiosity and awareness. — John Cage"
+      class="mx-auto max-h-screen w-3/4 py-4"
+    />
+  </div>
   <Homestars />
   <Prose>
     <Intro />
@@ -26,7 +44,7 @@ import Prose from "../components/Prose.astro";
   <img class="mx-auto" alt="- J." src="/chop.svg" />
 
   <div
-    class="text-md mx-auto max-w-3xl px-4 text-right font-sans text-stone-500 uppercase"
+    class="text-grey mx-auto max-w-3xl px-4 text-right font-sans text-base uppercase"
   >
     Port Townsend, Cascadia, July 02025
   </div>
