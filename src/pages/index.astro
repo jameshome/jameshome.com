@@ -12,7 +12,11 @@ const [introEntry, bioEntry, nowEntry] = await Promise.all([
   getEntry("documents", "now"),
 ]);
 const [{ Content: Intro }, { Content: Bio }, { Content: Now }] =
-  await Promise.all([render(introEntry!), render(bioEntry!), render(nowEntry!)]);
+  await Promise.all([
+    render(introEntry!),
+    render(bioEntry!),
+    render(nowEntry!),
+  ]);
 ---
 
 <Layout>
@@ -59,20 +63,34 @@ const [{ Content: Intro }, { Content: Bio }, { Content: Now }] =
   <Homestars />
   <Timeline />
   <Homestars />
-  <figure class="relative w-full bg-black">
-    <img
-      src="/jameshome-02025.jpg"
-      alt="James Home shot by Christopher Michel"
-      class="mx-auto w-3/4 md:w-1/2"
-    />
-    <figcaption
-      class="absolute right-5 bottom-5 origin-bottom-right rotate-90 font-sans text-sm text-white/50 uppercase"
-    >
-      Photo by <a href="https://www.christophermichel.com/"
-        >Christopher Michel</a
+  <div class="flex">
+    <figure class="relative flex-1">
+      <img
+        src="/james+dahlia-02019.jpg"
+        alt="James Home shot by Christopher Michel"
+        class="h-full w-full object-cover"
+      />
+      <figcaption
+        class="absolute bottom-5 left-5 origin-bottom-left rotate-270 font-sans text-xs text-black/50 uppercase"
       >
-    </figcaption>
-  </figure>
+        Photo by <a href="https://www.asamathat.com/">Asa Mathat</a>
+      </figcaption>
+    </figure>
+    <figure class="relative flex-1">
+      <img
+        src="/jameshome-02025.jpg"
+        alt="James Home shot by Christopher Michel"
+        class="h-full w-full object-cover"
+      />
+      <figcaption
+        class="absolute right-5 bottom-5 origin-bottom-right rotate-90 font-sans text-xs text-white/50 uppercase"
+      >
+        Photo by <a href="https://www.christophermichel.com/"
+          >Christopher Michel</a
+        >
+      </figcaption>
+    </figure>
+  </div>
   <a href="/"
     ><img src="/logo-jameshome.svg" alt="HOME" class="mx-auto my-20 w-40" /></a
   >
