@@ -71,3 +71,13 @@ The `Prose` component wraps content in Tailwind typography styles with customize
 - Vite is pinned to 6.4.1 via `overrides` in package.json — do not change this without testing
 - The `.astro/` generated types directory is gitignored; run `npm run dev` to regenerate
 - Format files with Prettier before committing — Tailwind class order is auto-sorted
+
+## Submodule / Netlify Auth
+
+**Do not change `.gitmodules` to use HTTPS.** The `vagabondage` submodule must use the SSH URL (`git@github.com:jameshome/vagabondage.git`). HTTPS fails on Netlify for private repos because there are no credentials available at clone time.
+
+Netlify accesses the submodule via a deploy key:
+1. Netlify deploy key lives at: **Site settings → Build & deploy → Deploy key**
+2. That key must be present in: **`jameshome/vagabondage` → Settings → Deploy keys**
+
+If Netlify builds start failing with submodule auth errors, check that the deploy key is still present in `vagabondage` — it may have been removed.
